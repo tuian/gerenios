@@ -1,5 +1,5 @@
 languageCode = "en-us"
-baseurl = "http://o365blog.com"
+baseurl = "http://o365blog.com/"
 title = "Office 365 blog"
 theme = "hugo_theme_robust"
 
