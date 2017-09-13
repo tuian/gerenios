@@ -4,7 +4,8 @@ title = "Office 365 blog"
 theme = "hugo_theme_robust"
 
 googleAnalytics = "UA-61454000-4" # Optional
-disqusShortname = "XYW"
+disqusShortname = "o365blog"
+
 publishDir = "docs"
 
 [params]
