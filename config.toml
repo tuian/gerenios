@@ -16,7 +16,7 @@ publishDir = "docs"
   logofontfamily = "Lobster, cursive" # Optional, Override logo font.
 
 [params.author]
-  thumbnail = "images/nestori.jpg"
+  thumbnail = "/images/nestori.jpg"
   name = "Dr Nestori Syynimaa"
   description = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
   twitter = "https://twitter.com/NestoriSyynimaa"
