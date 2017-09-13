@@ -1,0 +1,26 @@
+languageCode = "en-us"
+baseurl = "https://o365blog.com"
+title = "Office 365 blog"
+theme = "hugo_theme_robust"
+
+googleAnalytics = "UA-61454000-4" # Optional
+disqusShortname = "XYW"
+publishDir = "docs"
+
+[params]
+  description = "Office 365 blog"
+  dateformat = "Jan 2, 2006" # Optional
+  # Fonts settings.
+  googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.
+  fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" # Optional, Override body font family.
+  logofontfamily = "Lobster, cursive" # Optional, Override logo font.
+
+[params.author]
+  thumbnail = "images/nestori.jpg"
+  name = "Dr Nestori Syynimaa"
+  description = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+  twitter = "https://twitter.com/NestoriSyynimaa"
+  linkedin ="https://www.linkedin.com/in/nestori"
+
+[outputs]
+page = [ "HTML", "AMP" ] # if you want AMP enable.
