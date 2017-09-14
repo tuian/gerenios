@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "http://o365blog.com"
 title = "Office 365 blog"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page

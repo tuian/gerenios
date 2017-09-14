@@ -4,6 +4,7 @@ date = "2017-09-14"
 menu = "main"
 tags = ["Office365"]
 categories = ["article"]
+description = "How to connect to Office 365 and more!"
 +++
 
 # How to connect to Office 365

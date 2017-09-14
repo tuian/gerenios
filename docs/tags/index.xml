@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Office 365 blog</title>
-    <link>/tags/</link>
+    <link>http://o365blog.com/tags/</link>
     <description>Recent content in Tags on Office 365 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://o365blog.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Office365</title>
-      <link>/tags/office365/</link>
+      <link>http://o365blog.com/tags/office365/</link>
       <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/office365/</guid>
+      <guid>http://o365blog.com/tags/office365/</guid>
       <description></description>
     </item>
     

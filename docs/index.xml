@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Office 365 blog</title>
-    <link>/</link>
+    <link>http://o365blog.com/</link>
     <description>Recent content on Office 365 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://o365blog.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PowerShell</title>
-      <link>/powershell/</link>
+      <link>http://o365blog.com/powershell/</link>
       <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/powershell/</guid>
+      <guid>http://o365blog.com/powershell/</guid>
       <description>How to connect to Office 365 Preparation Before you can use any Office 365 PowerShell cmdlets, you need to download and install them.
 First you should save your credentials and tenant name to variables so you can use them later: $cred=Get-Credential $tenant=&amp;quot;yourtenant&amp;quot;  Office 365 (v1) To connect to Office 365, please use the following command: Connect-MsolService -credential $credential  SharePoint Online To connect to SharePoint online, please use the following command: Connect-SPOService -Url https://$tenant-admin.</description>
     </item>
     
     <item>
       <title>Welcome</title>
-      <link>/post/welcome/</link>
+      <link>http://o365blog.com/post/welcome/</link>
       <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/welcome/</guid>
+      <guid>http://o365blog.com/post/welcome/</guid>
       <description>Welcome to my Office 365 blog!</description>
     </item>
     

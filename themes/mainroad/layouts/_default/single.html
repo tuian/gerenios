@@ -20,6 +20,7 @@
 				{{- end }}
 			</p>
 			{{- end }}
+			{{ partial "share.html" . }}
 		</header>
 		<div class="post__content clearfix">
 			{{- if .Params.thumbnail }}
@@ -30,6 +31,7 @@
 			{{ .Content }}
 		</div>
 		{{ partial "post_tags.html" . }}
+		{{ partial "share.html" . }}
 	</article>
 	{{ partial "authorbox.html" . }}
 	{{ partial "post_nav.html" . }}
