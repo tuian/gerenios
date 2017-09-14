@@ -6,6 +6,7 @@ theme = "mainroad"
 googleAnalytics = "UA-61454000-4" # Optional
 disqusShortname = "o365blog-com"
 pygmentsuseclasses = true
+publishDir = "docs"
 
 [Author] # Used in authorbox
     name = "Dr Nestori Syynimaa"
@@ -36,3 +37,4 @@ pygmentsuseclasses = true
     social_twitter = "NestoriSyynimaa"
     social_linkedin = "nestori"
     social_email = "nestori.syynimaa@gerenios.com"
+
