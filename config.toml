@@ -10,7 +10,7 @@ publishDir = "docs"
 
 [Author] # Used in authorbox
     name = "Dr Nestori Syynimaa"
-    bio = "Dr Syynimaa is a senior Office 365 consultant and trainer in [**Sovelto Plc**](http://www.sovelto.fi). He is Microsoft Certified Trainer and holds several Microsoft certifications including MCSA Office 365. He is also a university teacher in [**University of Jyväskylä**](http://www.jyu.fi)."
+    bio = "Dr Syynimaa is a senior Office 365 consultant and trainer in [**Sovelto Plc**](http://www.sovelto.fi). He is Microsoft Certified Trainer and holds several Microsoft certifications including MCSA Office 365. He is also lecturer in [**University of Jyväskylä**](http://www.jyu.fi)."
     avatar = "images/nestori.jpg"
 
 [Params]
