@@ -28,6 +28,10 @@
 				<img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
 			</figure>
 			{{- end }}
+			{{- if .TableOfContents}}
+			In this article:
+			{{.TableOfContents}}
+			{{- end}}
 			{{ .Content }}
 		</div>
 		{{ partial "post_tags.html" . }}

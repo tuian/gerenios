@@ -12,9 +12,10 @@ publishDir = "docs"
     name = "Dr Nestori Syynimaa"
     bio = "Dr Syynimaa is a senior Office 365 consultant and trainer in [**Sovelto Plc**](http://www.sovelto.fi). He is Microsoft Certified Trainer and holds several Microsoft certifications including MCSA Office 365. He is also lecturer in [**University of Jyväskylä**](http://www.jyu.fi)."
     avatar = "images/nestori.jpg"
+#	avatar = "images/dr_nestor.jpg"
 
 [Params]
-    subtitle = "Your source for Office 365 administering" # Subtitle of your site. Used in site header
+    subtitle = "Everything about Office 365 administration" # Subtitle of your site. Used in site header
     description = "The site for all Office 365 administrators" # Description of your site. Used in meta description
     opengraph = true # Enable OpenGraph if true
     readmore = false # Show "Read more" button in list if true

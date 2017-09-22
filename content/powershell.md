@@ -1,12 +1,16 @@
 +++
 title = "PowerShell"
-date = "2017-09-14"
+date = "2017-09-22"
 menu = "main"
-tags = ["Office365"]
+tags = ["Office365", "PowerShell"]
 categories = ["article"]
-description = "How to connect to Office 365 and more!"
+description = "How to connect to Office 365 with PowerShell"
+thumbnail = "/images/PowerShell.png"
 +++
 
+This article explains how to connect Office 365 using PowerShell and more!
+ <!--more-->
+ 
 # How to connect to Office 365
 
 ## Preparation

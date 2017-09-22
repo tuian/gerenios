@@ -7,14 +7,14 @@
 <meta name="description" content="The site for all Office 365 administrators">
 <meta name="generator" content="Hugo 0.27" />
 <meta property="og:title" content="PowerShell" />
-<meta property="og:description" content="How to connect to Office 365 and more!" />
+<meta property="og:description" content="How to connect to Office 365 with PowerShell" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://o365blog.com/powershell/" />
 
 
 
-<meta property="article:published_time" content="2017-09-14T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-09-14T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2017-09-22T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-09-22T00:00:00&#43;00:00"/>
 
 
 
@@ -33,7 +33,28 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 <script type="text/javascript" src="/js/scripts.js"></script>
-<link rel="shortcut icon" href="/favicon.ico">
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/images/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/images/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/images/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/images/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/images/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/images/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/images/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/images/mstile-310x310.png" />
+
 
 <script>
 window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -46,11 +67,14 @@ ga('send', 'pageview');
 <body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 	<div class="container container-outer">
 		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+		
 			<div class="container container-inner clearfix">
+			
 				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+				
 					<a class="logo__link" href="/" title="Office 365 blog" rel="home">
-						<h1 class="logo__title">Office 365 blog</h1>
-						<h2 class="logo__tagline">Your source for Office 365 administering</h2>
+						<img src="/images/favicon-96x96.png"><h1 class="logo__title">Office 365 blog</h1>
+						<h2 class="logo__tagline">Everything about Office 365 administration</h2>
 					</a>
 				</div>
 			</div>
@@ -70,7 +94,7 @@ ga('send', 'pageview');
 			<h1 class="post__title">PowerShell</h1>
 			<p class="post__meta meta">
 				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="post__meta-date" datetime="2017-09-14T00:00:00">September 14, 2017</time>
+				<time class="post__meta-date" datetime="2017-09-22T00:00:00">September 22, 2017</time>
 				<span class="post__meta-categories meta-categories">
 					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
 					<a class="meta-categories__link" href="/categories/article" rel="category">article</a></span>
@@ -78,12 +102,29 @@ ga('send', 'pageview');
 			<div class="post__tags tags clearfix">
 <ul class="tags__list">
 	<li class="tags__item"><a class="tags__link" href="http://twitter.com/intent/tweet?url=http%3a%2f%2fo365blog.com%2fpowershell%2f&text=PowerShell&tw_p=tweetbutton" title="Share in Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpowershell%2f&mini=true&title=PowerShell&summary=How%20to%20connect%20to%20Office%20365%20and%20more%21&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpowershell%2f&mini=true&title=PowerShell&summary=How%20to%20connect%20to%20Office%20365%20with%20PowerShell&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 </ul>
 </div>
 		</header>
 		<div class="post__content clearfix">
-			
+			<figure class="post__thumbnail">
+				<img src="/images/PowerShell.png" alt="PowerShell">
+			</figure>
+			In this article:
+			<nav id="TableOfContents">
+<ul>
+<li><a href="#how-to-connect-to-office-365">How to connect to Office 365</a>
+<ul>
+<li><a href="#preparation">Preparation</a></li>
+<li><a href="#office-365-v1">Office 365 (v1)</a></li>
+<li><a href="#sharepoint-online">SharePoint Online</a></li>
+<li><a href="#skype-for-business">Skype for Business</a></li>
+<li><a href="#exchange-online">Exchange Online</a></li>
+</ul></li>
+</ul>
+</nav>
+			<p>This article explains how to connect Office 365 using PowerShell and more!
+ </p>
 
 <h1 id="how-to-connect-to-office-365">How to connect to Office 365</h1>
 
@@ -126,7 +167,6 @@ ga('send', 'pageview');
 <span class="nb">Import-PSSession</span> <span class="nv">$exses</span>
 </code></pre></div>
 </p>
-
 		</div>
 		
 <div class="post__tags tags clearfix">
@@ -134,13 +174,14 @@ ga('send', 'pageview');
 	
 	<ul class="tags__list">
 		<li class="tags__item"><a class="tags__link" href="/tags/office365/" rel="tag">Office365</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/powershell/" rel="tag">PowerShell</a></li>
 	</ul>
 </div>
 
 		<div class="post__tags tags clearfix">
 <ul class="tags__list">
 	<li class="tags__item"><a class="tags__link" href="http://twitter.com/intent/tweet?url=http%3a%2f%2fo365blog.com%2fpowershell%2f&text=PowerShell&tw_p=tweetbutton" title="Share in Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpowershell%2f&mini=true&title=PowerShell&summary=How%20to%20connect%20to%20Office%20365%20and%20more%21&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpowershell%2f&mini=true&title=PowerShell&summary=How%20to%20connect%20to%20Office%20365%20with%20PowerShell&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 </ul>
 </div>
 	</article>
@@ -246,6 +287,7 @@ ga('send', 'pageview');
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
 		<a class="widget__link widget__link--taglist" href="/tags/office365" title="office365">office365</a>
+		<a class="widget__link widget__link--taglist" href="/tags/powershell" title="powershell">powershell</a>
 	</div>
 </div>
 </aside>

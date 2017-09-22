@@ -6,7 +6,7 @@
     <description>Recent content on Office 365 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://o365blog.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,11 +14,11 @@
     <item>
       <title>PowerShell</title>
       <link>http://o365blog.com/powershell/</link>
-      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>http://o365blog.com/powershell/</guid>
-      <description>How to connect to Office 365 Preparation Before you can use any Office 365 PowerShell cmdlets, you need to download and install them.
-First you should save your credentials and tenant name to variables so you can use them later: $cred=Get-Credential $tenant=&amp;quot;yourtenant&amp;quot;  Office 365 (v1) To connect to Office 365, please use the following command: Connect-MsolService -credential $credential  SharePoint Online To connect to SharePoint online, please use the following command: Connect-SPOService -Url https://$tenant-admin.</description>
+      <description>&lt;p&gt;This article explains how to connect Office 365 using PowerShell and more!
+ &lt;/p&gt;</description>
     </item>
     
     <item>
