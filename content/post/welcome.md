@@ -1,5 +1,5 @@
 +++
-title = "Welcome"
+title = "Welcome to Office 365 blog"
 date = "2017-09-27"
 description = "Welcome to Office 365 blogs"
 categories =["blog"]
