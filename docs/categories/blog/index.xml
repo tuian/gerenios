@@ -6,7 +6,7 @@
     <description>Recent content in Blog on Office 365 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://o365blog.com/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +14,13 @@
     <item>
       <title>Welcome</title>
       <link>http://o365blog.com/post/welcome/</link>
-      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>http://o365blog.com/post/welcome/</guid>
-      <description>Welcome to my Office 365 blog!</description>
+      <description>&lt;p&gt;&lt;strong&gt;Welcome to my Office 365 blog!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this blog I&amp;rsquo;ll discuss about various aspects of administering Office 365 suite.
+&lt;/p&gt;</description>
     </item>
     
   </channel>
