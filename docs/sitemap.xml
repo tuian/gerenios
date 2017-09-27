@@ -3,18 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://o365blog.com/powershell/</loc>
-    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://o365blog.com/post/welcome/</loc>
     <lastmod>2017-09-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>http://o365blog.com/powershell/</loc>
+    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://o365blog.com/categories/article/</loc>
-    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -26,19 +26,19 @@
   
   <url>
     <loc>http://o365blog.com/categories/</loc>
-    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://o365blog.com/</loc>
-    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://o365blog.com/tags/office365/</loc>
-    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -50,13 +50,13 @@
   
   <url>
     <loc>http://o365blog.com/tags/powershell/</loc>
-    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://o365blog.com/tags/</loc>
-    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

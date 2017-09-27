@@ -6,7 +6,7 @@
     <description>Recent content in Powershell on Office 365 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://o365blog.com/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>PowerShell</title>
       <link>http://o365blog.com/powershell/</link>
-      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>http://o365blog.com/powershell/</guid>
       <description>&lt;p&gt;This article explains how to connect Office 365 using PowerShell and more!
