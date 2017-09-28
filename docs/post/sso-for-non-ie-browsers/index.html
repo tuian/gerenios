@@ -3,18 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome to Office 365 blog</title>
+<title>How to enable SSO for all browsers</title>
 <meta name="description" content="The site for all Office 365 administrators">
 <meta name="generator" content="Hugo 0.27" />
-<meta property="og:title" content="Welcome to Office 365 blog" />
-<meta property="og:description" content="Welcome to Office 365 blogs" />
+<meta property="og:title" content="How to enable SSO for all browsers" />
+<meta property="og:description" content="By default, AD FS only supports SSO with Internet Explorer. However, you can easily enable support for Google Chrome, Firefox, and Edge.
+
+" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://o365blog.com/post/welcome/" />
+<meta property="og:url" content="http://o365blog.com/post/sso-for-non-ie-browsers/" />
 
 
 
-<meta property="article:published_time" content="2017-09-27T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-09-27T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2017-09-28T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-09-28T00:00:00&#43;00:00"/>
 
 
 
@@ -91,49 +93,109 @@ ga('send', 'pageview');
 <main class="main-content content" role="main" itemprop="mainContentOfPage">
 	<article class="post">
 		<header class="post__header clearfix">
-			<h1 class="post__title">Welcome to Office 365 blog</h1>
+			<h1 class="post__title">How to enable SSO for all browsers</h1>
 			<p class="post__meta meta">
 				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="post__meta-date" datetime="2017-09-27T00:00:00">September 27, 2017</time>
+				<time class="post__meta-date" datetime="2017-09-28T00:00:00">September 28, 2017</time>
 				<span class="post__meta-categories meta-categories">
 					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
 					<a class="meta-categories__link" href="/categories/blog" rel="category">blog</a></span>
 			</p>
 			<div class="post__tags tags clearfix">
 <ul class="tags__list">
-	<li class="tags__item"><a class="tags__link" href="http://twitter.com/intent/tweet?url=http%3a%2f%2fo365blog.com%2fpost%2fwelcome%2f&text=Welcome%20to%20Office%20365%20blog&tw_p=tweetbutton" title="Share in Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpost%2fwelcome%2f&mini=true&title=Welcome%20to%20Office%20365%20blog&summary=Welcome%20to%20Office%20365%20blogs&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	<li class="tags__item"><a class="tags__link" href="http://twitter.com/intent/tweet?url=http%3a%2f%2fo365blog.com%2fpost%2fsso-for-non-ie-browsers%2f&text=How%20to%20enable%20SSO%20for%20all%20browsers&tw_p=tweetbutton" title="Share in Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpost%2fsso-for-non-ie-browsers%2f&mini=true&title=How%20to%20enable%20SSO%20for%20all%20browsers&summary=&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 </ul>
 </div>
 		</header>
 		<div class="post__content clearfix">
 			<figure class="post__thumbnail">
-				<img src="/images/blog.png" alt="Welcome to Office 365 blog">
+				<img src="/images/posts/sso%20for%20non-ie%20browsers.png" alt="How to enable SSO for all browsers">
 			</figure>
-			<p><strong>Welcome to my Office 365 blog!</strong></p>
+				<nav id="TableOfContents">
+<ul>
+<li><a href="#configuring-single-sign-on">Configuring single-sign-on</a>
+<ul>
+<li><a href="#server-side-configuration">Server side configuration</a></li>
+<li><a href="#client-side-configuration">Client side configuration</a></li>
+</ul></li>
+</ul>
+</nav>
+			<p>By default, AD FS only supports SSO with Internet Explorer. However, you can easily enable support for Google Chrome, Firefox, and Edge.</p>
 
-<p>In this blog I&rsquo;ll discuss about various aspects of administering Office 365 suite.
-</p>
+<p></p>
 
-<p>Administering Office 365 is somewhat easy if you know the basics. However, there are many tricks that can ease your job, but also issues nobody has ever told you about!</p>
+<h1 id="configuring-single-sign-on">Configuring single-sign-on</h1>
 
-<p>I&rsquo;ll update the blog regularly, so there is plenty of new blogs and articles to come. In the meantime, you can check my first <a href="/powershell/">PowerShell</a> article.</p>
+<p>As we know, Office 365 single-sign-on (SSO) between the on-premises and cloud is (typically) implemented using Active Directory Federation Services (AD FS).
+AD FS is a built-in service of Windows Server operating system.
+Typically AD FS is configured so that the extranet login is handled by forms-based authentication and intranet by Windows Integrated Authentication (WIA).
+This means that when a user is logging in from a domain joined computer in intranet, the browser logs in automatically (that&rsquo;s why it is called single-sign-on).
+However, if user is logginh in from intranet using a browser which is not supported in AD FS, user will get the login prompt:</p>
 
-<p>If there is something special you&rsquo;d like be to blog, please send me an email to <a href="mailto:nestori.syynimaa@gerenios.com?subject=Blog suggestion">nestori.syynimaa@gerenios.com</a>.</p>
+<p><img src="/images/posts/sso for non-ie browsers contoso.png" alt="alt text" title="login prompt" /></p>
+
+<p>By default, AD FS is configured to perform WIA only with Internet Explorer.
+Luckily this can be easily changed to support also Firefox, Chrome, and Edge (Edge is supported by default in AD FS 4.0, i.e. Windows Server 2016).
+Below is the script to configure WIA in AD FS 3.0 (i.e. Windows Server 2012 R2) and AD FS 4.0.</p>
+
+<h2 id="server-side-configuration">Server side configuration</h2>
+
+<p><strong>Note:</strong> The script needs to be run on all AD FS servers of AD FS farm.</p>
+
+<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span></span><span class="c"># Save the list of currently supported browser user-agents to a variable</span>
+<span class="nv">$browsers</span><span class="p">=</span><span class="nb">Get-AdfsProperties</span> <span class="p">|</span> <span class="n">Select</span> <span class="n">-ExpandProperty</span> <span class="n">WIASupportedUseragents</span>
+
+<span class="c"># Add Mozilla/5.0 user-agent to the list</span>
+<span class="nv">$browsers</span><span class="p">+=</span><span class="s2">&quot;Mozilla/5.0&quot;</span>
+
+<span class="c"># Apply the new list</span>
+<span class="nb">Set-AdfsProperties</span> <span class="n">-WIASupportedUseragents</span> <span class="nv">$browsers</span>
+
+<span class="c"># Restart the AD FS service</span>
+<span class="nb">Restart-Service</span> <span class="n">adfssrv</span>
+</code></pre></div>
+
+
+<p><strong>Note:</strong> If you have problems with the Firefox SSO, you might need to turn off <a href="https://technet.microsoft.com/en-us/library/hh237448%28v=ws.10%29.aspx" target="_blank">AD FS Extended Protection</a> using the following script.</p>
+
+<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span></span><span class="c"># Turn off Extended Protection</span>
+<span class="nb">Set-ADFSProperties</span> <span class="err">–</span><span class="n">ExtendedProtectionTokenCheck</span> <span class="n">None</span>
+
+<span class="c"># Restart the AD FS service</span>
+<span class="nb">Restart-Service</span> <span class="n">adfssrv</span>
+</code></pre></div>
+
+
+<h2 id="client-side-configuration">Client side configuration</h2>
+
+<p>If you are using Chrome or Edge, you don&rsquo;t need to do any client side configuration as it is using same settings than IE.
+In Firefox, you  need to do some client side configuration if you got the following authentication prompt:</p>
+
+<p><img src="/images/posts/sso for non-ie browsers wia prompt.png" alt="alt text" title="Windows login prompt" /></p>
+
+<p>For Firefox, you need to browse to <a href="about:config">about:config</a> and add the address of your AD FS server (e.g. sts.contoso.com) to <strong>network.negotiate-auth.trusted-uris</strong>.</p>
+
+<p><img src="/images/posts/sso for non-ie browsers firefox.png" alt="alt text" title="Firefox configuration" /></p>
+
+<p>And that&rsquo;s it, you are ready to go. Enjoy!</p>
 		</div>
 		
 <div class="post__tags tags clearfix">
 	<img class="icon icon-tag" src="/images/tags.png" width="16" height="16" viewBox="0 0 16 16">
 	
 	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link" href="/tags/office365/" rel="tag">Office365</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/sso/" rel="tag">SSO</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/adfs/" rel="tag">ADFS</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/powershell/" rel="tag">PowerShell</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/browser/" rel="tag">Browser</a></li>
 	</ul>
 </div>
 
 		<div class="post__tags tags clearfix">
 <ul class="tags__list">
-	<li class="tags__item"><a class="tags__link" href="http://twitter.com/intent/tweet?url=http%3a%2f%2fo365blog.com%2fpost%2fwelcome%2f&text=Welcome%20to%20Office%20365%20blog&tw_p=tweetbutton" title="Share in Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpost%2fwelcome%2f&mini=true&title=Welcome%20to%20Office%20365%20blog&summary=Welcome%20to%20Office%20365%20blogs&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	<li class="tags__item"><a class="tags__link" href="http://twitter.com/intent/tweet?url=http%3a%2f%2fo365blog.com%2fpost%2fsso-for-non-ie-browsers%2f&text=How%20to%20enable%20SSO%20for%20all%20browsers&tw_p=tweetbutton" title="Share in Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpost%2fsso-for-non-ie-browsers%2f&mini=true&title=How%20to%20enable%20SSO%20for%20all%20browsers&summary=&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 </ul>
 </div>
 	</article>
@@ -151,8 +213,8 @@ ga('send', 'pageview');
 </div>
 	
 <nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-	<div class="post-nav__item post-nav__item--next col-1-2">
-		<a class="post-nav__link" href="/post/sso-for-non-ie-browsers/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">How to enable SSO for all browsers</p></a>
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/post/welcome/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Welcome to Office 365 blog</p></a>
 	</div>
 </nav>
 

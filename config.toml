@@ -1,6 +1,6 @@
 baseurl = "http://o365blog.com"
 title = "Office 365 blog"
-languageCode = "en-us"
+languageCode = "en-gb"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
 googleAnalytics = "UA-61454000-4" # Optional

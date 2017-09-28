@@ -5,11 +5,29 @@
     <link>http://o365blog.com/tags/</link>
     <description>Recent content in Tags on Office 365 blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 28 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://o365blog.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Adfs</title>
+      <link>http://o365blog.com/tags/adfs/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://o365blog.com/tags/adfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Browser</title>
+      <link>http://o365blog.com/tags/browser/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://o365blog.com/tags/browser/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Office365</title>
@@ -23,9 +41,18 @@
     <item>
       <title>Powershell</title>
       <link>http://o365blog.com/tags/powershell/</link>
-      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>http://o365blog.com/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sso</title>
+      <link>http://o365blog.com/tags/sso/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://o365blog.com/tags/sso/</guid>
       <description></description>
     </item>
     

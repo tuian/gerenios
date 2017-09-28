@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Office 365 blog</title>
-    <link>http://o365blog.com/post/</link>
-    <description>Recent content in Posts on Office 365 blog</description>
+    <title>Sso on Office 365 blog</title>
+    <link>http://o365blog.com/tags/sso/</link>
+    <description>Recent content in Sso on Office 365 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 28 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://o365blog.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://o365blog.com/tags/sso/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,18 +20,6 @@
       <description>&lt;p&gt;By default, AD FS only supports SSO with Internet Explorer. However, you can easily enable support for Google Chrome, Firefox, and Edge.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Welcome to Office 365 blog</title>
-      <link>http://o365blog.com/post/welcome/</link>
-      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://o365blog.com/post/welcome/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Welcome to my Office 365 blog!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In this blog I&amp;rsquo;ll discuss about various aspects of administering Office 365 suite.
-&lt;/p&gt;</description>
     </item>
     
   </channel>
