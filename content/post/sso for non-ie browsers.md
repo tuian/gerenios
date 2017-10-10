@@ -44,7 +44,7 @@ Restart-Service adfssrv
 
 **Note:** If you have problems with the Firefox SSO, you might need to turn off <a href="https://technet.microsoft.com/en-us/library/hh237448%28v=ws.10%29.aspx" target="_blank">AD FS Extended Protection</a> using the following script.
 
-{{< highlight powershell >}}
+{{< highlight powershell>}}
 # Turn off Extended Protection
 Set-ADFSProperties –ExtendedProtectionTokenCheck None
 

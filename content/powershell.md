@@ -70,7 +70,7 @@ $cred=Get-Credential
 $tenant="yourtenant"
 
 # Connect to Office 365 (Azure AD)
-Connect-MsolService -credential $credential
+Connect-MsolService -credential $cred
 
 # Connect to SharePoint Online
 Connect-SPOService -Url https://$tenant-admin.sharepoint.com -Credential $cred

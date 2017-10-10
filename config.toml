@@ -6,11 +6,13 @@ theme = "mainroad"
 googleAnalytics = "UA-61454000-4" # Optional
 disqusShortname = "o365blog-com"
 pygmentsuseclasses = true
+pygmentsuseclassic = true
 publishDir = "docs"
+#sectionPagesMenu = "main"
 
 [Author] # Used in authorbox
     name = "Dr Nestori Syynimaa"
-    bio = "Dr Syynimaa is a senior Office 365 consultant and trainer in [**Sovelto Plc**](http://www.sovelto.fi). He is Microsoft Certified Trainer and holds several Microsoft certifications including MCSA Office 365. He is also lecturer in [**University of Jyväskylä**](http://www.jyu.fi)."
+    bio = "Dr Syynimaa is a senior Office 365 consultant and trainer in [**Sovelto Plc**](http://www.sovelto.fi). He is a Microsoft Certified Trainer and holds several Microsoft certifications including MCSA Office 365. He is also a lecturer in [**University of Jyväskylä**](http://www.jyu.fi)."
     avatar = "images/nestori.jpg"
 #	avatar = "images/dr_nestor.jpg"
 
@@ -38,4 +40,5 @@ publishDir = "docs"
     social_twitter = "NestoriSyynimaa"
     social_linkedin = "nestori"
     social_email = "nestori.syynimaa@gerenios.com"
+	
 

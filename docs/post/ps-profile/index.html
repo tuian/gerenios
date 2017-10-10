@@ -3,18 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PowerShell</title>
+<title>Using PowerShell profile to connect to Office 365</title>
 <meta name="description" content="The site for all Office 365 administrators">
 <meta name="generator" content="Hugo 0.29" />
-<meta property="og:title" content="PowerShell" />
-<meta property="og:description" content="How to connect to Office 365 with PowerShell" />
+<meta property="og:title" content="Using PowerShell profile to connect to Office 365" />
+<meta property="og:description" content="PowerShell profile makes connecting to Office 365 a lot easier!
+
+" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://o365blog.com/powershell/" />
+<meta property="og:url" content="http://o365blog.com/post/ps-profile/" />
 
 
 
-<meta property="article:published_time" content="2017-09-05T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-09-27T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2017-10-10T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-10-10T00:00:00&#43;00:00"/>
 
 
 
@@ -81,7 +83,7 @@ ga('send', 'pageview');
 			
 <nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 	<ul class="menu__list">
-		<li class="menu__item menu__item--active"><a class="menu__link" href="/powershell/">POWERSHELL</a></li>
+		<li class="menu__item "><a class="menu__link" href="/powershell/">POWERSHELL</a></li>
 	</ul>
 </nav>
 
@@ -91,129 +93,111 @@ ga('send', 'pageview');
 <main class="main-content content" role="main" itemprop="mainContentOfPage">
 	<article class="post">
 		<header class="post__header clearfix">
-			<h1 class="post__title">PowerShell</h1>
+			<h1 class="post__title">Using PowerShell profile to connect to Office 365</h1>
 			<p class="post__meta meta">
 				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="post__meta-date" datetime="2017-09-05T00:00:00">September 05, 2017</time>
-					<time class="post__meta-lastmod" datetime="2017-09-27T00:00:00"> (Last Modified: September 27, 2017)</time>
+				<time class="post__meta-date" datetime="2017-10-10T00:00:00">October 10, 2017</time>
 				<span class="post__meta-categories meta-categories">
 					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-					<a class="meta-categories__link" href="/categories/article" rel="category">article</a></span>
+					<a class="meta-categories__link" href="/categories/blog" rel="category">blog</a></span>
 			</p>
 			<div class="post__tags tags clearfix">
 <ul class="tags__list">
-	<li class="tags__item"><a class="tags__link" href="http://twitter.com/intent/tweet?url=http%3a%2f%2fo365blog.com%2fpowershell%2f&text=PowerShell&tw_p=tweetbutton" title="Share in Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpowershell%2f&mini=true&title=PowerShell&summary=How%20to%20connect%20to%20Office%20365%20with%20PowerShell&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	<li class="tags__item"><a class="tags__link" href="http://twitter.com/intent/tweet?url=http%3a%2f%2fo365blog.com%2fpost%2fps-profile%2f&text=Using%20PowerShell%20profile%20to%20connect%20to%20Office%20365&tw_p=tweetbutton" title="Share in Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpost%2fps-profile%2f&mini=true&title=Using%20PowerShell%20profile%20to%20connect%20to%20Office%20365&summary=&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 </ul>
 </div>
 		</header>
 		<div class="post__content clearfix">
 			<figure class="post__thumbnail">
-				<img src="/images/PowerShell.png" alt="PowerShell">
+				<img src="/images/posts/sso%20for%20non-ie%20browsers.png" alt="Using PowerShell profile to connect to Office 365">
 			</figure>
 				<nav id="TableOfContents">
 <ul>
-<li><a href="#how-to-connect-to-office-365">How to connect to Office 365</a>
-<ul>
-<li><a href="#before-you-start">Before you start</a></li>
-<li><a href="#office-365">Office 365</a></li>
-<li><a href="#sharepoint-online">SharePoint Online</a></li>
-<li><a href="#skype-for-business">Skype for Business</a></li>
-<li><a href="#exchange-online">Exchange Online</a></li>
-<li><a href="#the-complete-connection-script">The complete connection script</a></li>
-</ul></li>
+<li><a href="#what-is-a-powershell-profile">What is a PowerShell profile?</a></li>
+<li><a href="#creating-a-profile">Creating a profile</a></li>
 </ul>
 </nav>
-			<p>This article explains how to connect Office 365 using PowerShell and more!
- </p>
+			<p>PowerShell profile makes connecting to Office 365 a lot easier!</p>
 
-<h1 id="how-to-connect-to-office-365">How to connect to Office 365</h1>
+<p></p>
 
-<h2 id="before-you-start">Before you start</h2>
+<h1 id="what-is-a-powershell-profile">What is a PowerShell profile?</h1>
 
-<p>Before you can use any Office 365 PowerShell cmdlets, you need to download and install them following the links below.</p>
+<p>PowerShell <a href="https://technet.microsoft.com/en-us/library/bb613488(v=vs.85).aspx" target="_blank">profile</a> is simply a PowerShell script that is executed whenever you launch a new PowerShell session.</p>
 
-<ol>
-<li>Download <a href="https://www.microsoft.com/en-us/download/details.aspx?id=28177" target="_blank">Microsoft Online Services Sign-In Assistant</a></li>
-<li>Browse to <a href="http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185" target="_blank">Azure Active Directory PowerShell V1</a> and select download link next to <strong>AdministrationConfig-V1.1.166.0-GA.msi</strong></li>
-<li>Download <a href="http://www.microsoft.com/download/details.aspx?id=35588" target="_blank">SharePoint Online Management Shell</a></li>
-<li>Download <a href="http://www.microsoft.com/en-us/download/details.aspx?id=39366" target="_blank">Skype for Business, Windows PowerShell Module</a></li>
-</ol>
+<p>You can have a profile which applies to all users or just to you. To automate the connection to Office 365 you should use the latter one.</p>
 
-<p>After installing the modules, you&rsquo;re ready to go!</p>
-
-<p>First we save your credentials and tenant name to variables, so we can use them later. For tenant, use the first part of your tenant name: <strong>yourtenant</strong>.onmicrosoft.com</p>
-
-<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span></span><span class="nv">$cred</span><span class="p">=</span><span class="nb">Get-Credential</span>
-<span class="nv">$tenant</span><span class="p">=</span><span class="s2">&quot;yourtenant&quot;</span>
-</code></pre></div>
-
-
-<h2 id="office-365">Office 365</h2>
-
-<p>To connect to Office 365, please use the following command:
-<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span></span><span class="nb">Connect-MsolService</span> <span class="n">-credential</span> <span class="nv">$credential</span>
+<p>The path of the profile file is stored in <strong>$profile</strong> variable. You can easily find the location by &ldquo;executing&rdquo; the variable:
+<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span></span><span class="c"># Print the location of the PowerShell profile</span>
+<span class="nv">$profile</span>
 </code></pre></div>
 </p>
 
-<h2 id="sharepoint-online">SharePoint Online</h2>
+<p><strong>Note:</strong> There is a separate profile for both PowerShell and ISE!</p>
 
-<p>To connect to SharePoint online, please use the following command:
-<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span></span><span class="nb">Connect-SPOService</span> <span class="n">-Url</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="nv">$tenant</span><span class="n">-admin</span><span class="p">.</span><span class="n">sharepoint</span><span class="p">.</span><span class="n">com</span> <span class="n">-Credential</span> <span class="nv">$cred</span>
+<p>You can also check whether the profile file exists. The following command returns <strong>True</strong> if the profile exists:
+<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span></span><span class="c"># Check if the profile exists</span>
+<span class="nb">Test-Path</span> <span class="nv">$profile</span>
 </code></pre></div>
 </p>
 
-<h2 id="skype-for-business">Skype for Business</h2>
+<h1 id="creating-a-profile">Creating a profile</h1>
 
-<p>There are two phases to connect to Skype for Business. First you create a remote session and then you import it to your local PowerShell session:
-<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span></span><span class="nv">$s4bses</span> <span class="p">=</span> <span class="nb">New-CsOnlineSession</span> <span class="n">-Credential</span> <span class="nv">$cred</span>
-<span class="nb">Import-PSSession</span> <span class="nv">$s4bses</span>
+<p>If the profile does not exist, you first need to create one. Easies way is (naturally) to do it with PowerShell:
+<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span></span><span class="c"># Create a new profile file with required directory structure</span>
+<span class="nb">New-Item</span> <span class="n">-Path</span> <span class="nv">$profile</span> <span class="n">-ItemType</span> <span class="n">File</span> <span class="n">-Force</span>
 </code></pre></div>
 </p>
 
-<h2 id="exchange-online">Exchange Online</h2>
+<p>Make not of the file name and open it in your favorite editor, such as PowerShell ISE. Next we will create a script that connects you to Office 365 services.</p>
 
-<p>Connecting to Exchange Online is similar to Skype for Business connection. However, you do not need to install any module to connect to Exchange Online.
-<div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span></span><span class="nv">$exses</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="n">-ConfigurationName</span> <span class="n">Microsoft</span><span class="p">.</span><span class="n">Exchange</span> <span class="n">-ConnectionUri</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">outlook</span><span class="p">.</span><span class="n">office365</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">powershell-liveid</span><span class="p">/</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-Authentication</span> <span class="n">Basic</span> <span class="n">-AllowRedirection</span>
-<span class="nb">Import-PSSession</span> <span class="nv">$exses</span>
-</code></pre></div>
-</p>
+<p>Usually you connect to Office 365 by using saved credentials.
+Credentials are first saved to variable using <strong>Get-Credential</strong> command, which shows a login prompt where you enter your username and password.
+To speed up the process, you can give your username as parameter so you only need to enter your password.</p>
 
-<h2 id="the-complete-connection-script">The complete connection script</h2>
+<p>Below is an example of a profile which is based to our connection script from the <a href="/powershell/#the-complete-connection-script" target="_blank">PowerShell</a> article.</p>
 
 <div class="highlight"><pre><code class="language-powershell" data-lang="powershell"><span></span><span class="c"># Save credentials and tenant for later use</span>
-<span class="nv">$cred</span><span class="p">=</span><span class="nb">Get-Credential</span>
+<span class="nv">$cred</span><span class="p">=</span><span class="nb">Get-Credential</span> <span class="n">-UserName</span> <span class="s2">&quot;youradmin@yourdomain.com&quot;</span> <span class="n">-Message</span> <span class="s2">&quot;Office 365&quot;</span>
 <span class="nv">$tenant</span><span class="p">=</span><span class="s2">&quot;yourtenant&quot;</span>
 
-<span class="c"># Connect to Office 365 (Azure AD)</span>
-<span class="nb">Connect-MsolService</span> <span class="n">-credential</span> <span class="nv">$cred</span>
+<span class="c"># Check for null before connecting</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$cred</span> <span class="o">-ne</span> <span class="nv">$null</span><span class="p">){</span>
+	<span class="c"># Connect to Office 365 (Azure AD)</span>
+	<span class="nb">Connect-MsolService</span> <span class="n">-credential</span> <span class="nv">$cred</span>
 
-<span class="c"># Connect to SharePoint Online</span>
-<span class="nb">Connect-SPOService</span> <span class="n">-Url</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="nv">$tenant</span><span class="n">-admin</span><span class="p">.</span><span class="n">sharepoint</span><span class="p">.</span><span class="n">com</span> <span class="n">-Credential</span> <span class="nv">$cred</span>
+	<span class="c"># Connect to SharePoint Online</span>
+	<span class="nb">Connect-SPOService</span> <span class="n">-Url</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="nv">$tenant</span><span class="n">-admin</span><span class="p">.</span><span class="n">sharepoint</span><span class="p">.</span><span class="n">com</span> <span class="n">-Credential</span> <span class="nv">$cred</span>
 
-<span class="c"># Connect to Skype for Business</span>
-<span class="nv">$s4bses</span> <span class="p">=</span> <span class="nb">New-CsOnlineSession</span> <span class="n">-Credential</span> <span class="nv">$cred</span>
-<span class="nb">Import-PSSession</span> <span class="nv">$s4bses</span>
+	<span class="c"># Connect to Skype for Business</span>
+	<span class="nv">$s4bses</span> <span class="p">=</span> <span class="nb">New-CsOnlineSession</span> <span class="n">-Credential</span> <span class="nv">$cred</span>
+	<span class="nb">Import-PSSession</span> <span class="nv">$s4bses</span>
 
-<span class="c"># Connect to Exchange Online</span>
-<span class="nv">$exses</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="n">-ConfigurationName</span> <span class="n">Microsoft</span><span class="p">.</span><span class="n">Exchange</span> <span class="n">-ConnectionUri</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">outlook</span><span class="p">.</span><span class="n">office365</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">powershell-liveid</span><span class="p">/</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-Authentication</span> <span class="n">Basic</span> <span class="n">-AllowRedirection</span>
-<span class="nb">Import-PSSession</span> <span class="nv">$exses</span>
+	<span class="c"># Connect to Exchange Online</span>
+	<span class="nv">$exses</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="n">-ConfigurationName</span> <span class="n">Microsoft</span><span class="p">.</span><span class="n">Exchange</span> <span class="n">-ConnectionUri</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">outlook</span><span class="p">.</span><span class="n">office365</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">powershell-liveid</span><span class="p">/</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-Authentication</span> <span class="n">Basic</span> <span class="n">-AllowRedirection</span>
+	<span class="nb">Import-PSSession</span> <span class="nv">$exses</span>
+<span class="p">}</span>
 </code></pre></div>
+
+
+<p>After saving the file, you will be prompted for the password every time start a new PowerShell session. To skip connecting, simply click cancel or hit the escape button.</p>
+
+<p><img src="/images/posts/ps profile.png" alt="alt text" title="profile login prompt" /></p>
 		</div>
 		
 <div class="post__tags tags clearfix">
 	<img class="icon icon-tag" src="/images/tags.png" width="16" height="16" viewBox="0 0 16 16">
 	
 	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link" href="/tags/office365/" rel="tag">Office365</a></li>
 		<li class="tags__item"><a class="tags__link" href="/tags/powershell/" rel="tag">PowerShell</a></li>
 	</ul>
 </div>
 
 		<div class="post__tags tags clearfix">
 <ul class="tags__list">
-	<li class="tags__item"><a class="tags__link" href="http://twitter.com/intent/tweet?url=http%3a%2f%2fo365blog.com%2fpowershell%2f&text=PowerShell&tw_p=tweetbutton" title="Share in Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpowershell%2f&mini=true&title=PowerShell&summary=How%20to%20connect%20to%20Office%20365%20with%20PowerShell&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+	<li class="tags__item"><a class="tags__link" href="http://twitter.com/intent/tweet?url=http%3a%2f%2fo365blog.com%2fpost%2fps-profile%2f&text=Using%20PowerShell%20profile%20to%20connect%20to%20Office%20365&tw_p=tweetbutton" title="Share in Twitter" target="_blank" rel="nofollow"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+	<li class="tags__item"><a class="tags__link" href="https://www.linkedin.com/shareArticle?url=http%3a%2f%2fo365blog.com%2fpost%2fps-profile%2f&mini=true&title=Using%20PowerShell%20profile%20to%20connect%20to%20Office%20365&summary=&source=o365blog.com" title="Share in LinkedIn" target="_blank" rel="nofollow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 </ul>
 </div>
 	</article>
@@ -230,6 +214,11 @@ ga('send', 'pageview');
 	</div>
 </div>
 	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/post/sso-for-non-ie-browsers/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">How to enable SSO for all browsers</p></a>
+	</div>
+</nav>
 
 	
 <div class="comments">
