@@ -3,7 +3,7 @@ title = "Using PowerShell profile to connect to Office 365"
 date = "2017-10-10"
 categories =["blog"]
 tags = ["PowerShell"]
-thumbnail = "/images/posts/sso for non-ie browsers.png"
+thumbnail = "/images/posts/ps profile thumb.png"
 +++
 
 PowerShell profile makes connecting to Office 365 a lot easier!
