@@ -146,7 +146,7 @@ ga('send', 'pageview');
 <span class="c"># Create a SRV record for Skype for Business federation</span>
 <span class="nb">Add-DnsServerResourceRecord</span> <span class="n">-zonename</span> <span class="nv">$domain</span> <span class="n">-name</span> <span class="s2">&quot;_sipfederationtls._tcp&quot;</span> <span class="n">-TimeToLive</span> <span class="n">3600</span> <span class="n">-srv</span> <span class="n">-DomainName</span> <span class="s2">&quot;sipfed.online.lync.com&quot;</span> <span class="n">-Priority</span> <span class="n">100</span> <span class="n">-Weight</span> <span class="n">1</span> <span class="n">-port</span> <span class="n">5061</span>
 
-<span class="c"># Create a CNAME record for outlook autodiscovery:</span>
+<span class="c"># Create a CNAME record for outlook autodiscover:</span>
 <span class="nb">Add-DnsServerResourceRecord</span> <span class="n">-ZoneName</span> <span class="nv">$domain</span> <span class="n">-TimeToLive</span> <span class="n">3600</span> <span class="n">-CName</span> <span class="s2">&quot;autodiscover&quot;</span> <span class="n">-HostNameAlias</span> <span class="s2">&quot;autodiscover.outlook.com&quot;</span>
 
 <span class="c"># Create a CNAME record for Skype for Business SIP:</span>

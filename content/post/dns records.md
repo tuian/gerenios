@@ -37,7 +37,7 @@ Add-DnsServerResourceRecord -zonename $domain -name "_sip._tls"  -TimeToLive 360
 # Create a SRV record for Skype for Business federation
 Add-DnsServerResourceRecord -zonename $domain -name "_sipfederationtls._tcp" -TimeToLive 3600 -srv -DomainName "sipfed.online.lync.com" -Priority 100 -Weight 1 -port 5061
 
-# Create a CNAME record for outlook autodiscovery:
+# Create a CNAME record for outlook autodiscover:
 Add-DnsServerResourceRecord -ZoneName $domain -TimeToLive 3600 -CName "autodiscover" -HostNameAlias "autodiscover.outlook.com"
 
 # Create a CNAME record for Skype for Business SIP:
