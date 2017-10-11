@@ -2,7 +2,7 @@
 title = "Using PowerShell profile to connect to Office 365"
 date = "2017-10-10"
 categories =["blog"]
-tags = ["PowerShell"]
+tags = ["PowerShell","DNS"]
 thumbnail = "/images/posts/ps profile thumb.png"
 +++
 
